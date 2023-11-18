@@ -6,13 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home Funkoshop</title>
     <link rel="shortcut icon" href="img/octoface.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/index.css">
 </head>
 
 <body>
 
     <header> <!--Inicio Header-->
-        <nav>
-            <picture>
+        <nav class="navbar">
+            <picture class="navbar__logo">
                 <a href="Index.html">
 
                     <img src="img/branding/logo_light_horizontal.svg" alt="Isologotipo de la marca Funkoshop">
@@ -20,11 +21,23 @@
             </picture>
 
 
-            <ul>
-                <li><a href="Pages/shop.html">SHOP</a></li>
-                <li><a href="Pages/contact.html">CONTACTO </a></li>
-                <li><a href="Pages/login.html">LOGIN</a></li>
-                <li><a href="Pages/cart.html">
+            <ul class="navbar__menu">
+                <li class="navbar__item">
+                    <a class="navbar__link with-icon" href="Pages/shop/shop.html">SHOP<iconify-icon icon="mdi:chevron-down"></iconify-icon></a></li>
+                <ul>
+                <li class="submenu__item">
+                    <a href="" class="submenu__link">Funkos</a>
+                </li>
+                <li class="submenu__item">
+                    <a href="" class="submenu__link">Remeras</a>
+                </li>
+                <li class="submenu__item">
+                    <a href="" class="submenu__link">Llaveros</a>
+                </li>
+            </ul>
+                <li class="navbar__item"><a class="navbar__link" href="Pages/admin/contact.html">CONTACTO </a></li>
+                <li class="navbar__item"><a class="navbar__link" href="Pages/admin/login.html">LOGIN</a></li>
+                <li class="navbar__item"><a class="navbar__cart" href="Pages/shop/cart.html">
                         <img src="img/icons/cart-icon.svg" alt="Icono de carrito">
 
                     </a></li>
@@ -39,7 +52,7 @@
             <article>
 
                 <h3>Nuevos Ingresos</h3>
-                <p>Desubrí el próximo Funko Pop de tu colección</p>
+                <p>Descubrí el próximo Funko Pop de tu colección</p>
                 <a href="Pages/shop.html">SHOP</a>
 
             </article>
@@ -141,16 +154,16 @@
    
         <ul>
             <li>
-                <a href="Pages/shop.html" >SHOP</a>
+                <a href="Pages/shop/shop.html" >SHOP</a>
             </li>
             <li> 
-                <a href="Pages/register.html" >REGISTRARSE</a>
+                <a href="Pages/admin/register.html" >REGISTRARSE</a>
             </li>
             <li>
-                <a href="Pages/login.html" >INGRESAR</a>
+                <a href="Pages/admin/login.html" >INGRESAR</a>
             </li>
             <li>
-                <a href="Pages/contact.html" >CONTACTO </a>
+                <a href="Pages/admin/contact" >CONTACTO </a>
             </li>        
         
     </ul>
@@ -166,6 +179,8 @@
         
 
     </footer><!--Fin Footer-->
+
+    <script src="https://cdn.jsdelivr.net/npm/iconify-icon@1.0.8/dist/iconify-icon.min.js"></script>
 </body>
 
 </html>
